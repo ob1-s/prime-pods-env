@@ -25,6 +25,10 @@ uv pip install -e environments/boilerplate
 3. Have fun
 
 ```bash
+export DUMMY_KEY=dummy
+```
+
+```bash
 uv run vf-eval boilerplate -n 1 -r 2 -a '{"num_pods": 2, "gpu_type": "H100_80GB", "socket_type": "SXM5", "on_demand": "all"}' -m "dummy-model" -b "http://localhost:9999/v1" -k "DUMMY_KEY" -s && vf-tui
 ```
 
