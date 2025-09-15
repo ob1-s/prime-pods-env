@@ -34,6 +34,8 @@ uv run vf-eval boilerplate -n 1 -r 2 -a '{"num_pods": 2, "gpu_type": "H100_80GB"
 
 The command above will provision and setup two pods of 8xH100 to run the async rollouts during the eval. The boilerplate env will wait for both pods to be ready, then send the packaged [`train_gpt.py`](https://github.com/ob1-s/prime-pods-env/blob/main/environments/boilerplate/train_gpt.py) script for training at each rollout step to an available provisioned pod.
 
+`on_demand = all` will first try to acquire SPOT instances buf if there's not enough of them it'll failsafe to ON DEMAND.
+
 The log is verbose, it'll show all the setup/training process for the first acquired pod (offset 0), and any critical messages from the others.
 
 ## TODOs
