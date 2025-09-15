@@ -1,0 +1,1 @@
+{"env": "boilerplate", "model": "dummy-model", "num_examples": 1, "rollouts_per_example": 2, "sampling_args": {"max_tokens": null}, "date": "2025-09-15", "time": "18:19:37", "avg_reward": 0.005829053700123693, "avg_get_reward_from_state": 0.005829053700123693}
