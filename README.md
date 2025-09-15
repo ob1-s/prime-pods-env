@@ -38,6 +38,8 @@ The command above will provision and setup two pods of 8xH100 to run the async r
 
 The log is verbose, it'll show all the setup/training process for the first acquired pod (offset 0), and any critical messages from the others.
 
+#### ⚠️ WARNING: sometimes the env will fail to terminate pods if something goes wrong, so keep an eye on them
+
 ## TODOs
 
 - [ ] make H100 the default
