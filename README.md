@@ -46,6 +46,7 @@ The log is verbose, it'll show all the setup/training process for the first acqu
 - [ ] terminate all pods if it fails to provision `min_pods`
 - [ ] test with `-n` > 1
 - [ ] add dependencies such as prime-cli
+- [ ] refactor it to be a custom Env Class
 
 ## Acknowledgement
 
